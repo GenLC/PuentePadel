@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Siimple - Bootstrap Landing Page Template</title>
+  <title>Puente Padel</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,6 +29,11 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .fondoTitulo {
+      background-color: #d2dadb;
+}
+  </style>
 </head>
 
 <body>
@@ -38,7 +43,7 @@
     <div class="container-fluid">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>Siimple</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>Puente Padel</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -75,29 +80,32 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div class="hero-container">
-      <h1>Welcome to Siimple</h1>
-      <h2>Please, fill out the for below to be notified for the latest updates!</h2>
-
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+    <div class="hero-container ">
+      <div class="fondoTitulo p-5">
+      <h1>Bienvenido al Puente Padel</h1>
+      <h2>Para reservas de turnos:</h2>
+      
+      <form class="php-email-form ">
         <div class="row no-gutters">
           <div class="col-md-6 form-group pr-md-1">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Ingresa tu nombre" />
             <div class="validate"></div>
           </div>
           <div class="col-md-6 form-group pl-md-1">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            <input type="email" class="form-control" name="email" id="email" placeholder="Horario del turno" data-rule="email" data-msg="Ingresa un horario" />
             <div class="validate"></div>
           </div>
         </div>
 
         <div class="mb-1">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your notification request was sent. Thank you!</div>
+          <div class="loading">Cargando</div>
+          
+          <div class="sent-message">Mensaje enviado, ¡Gracias!</div>
         </div>
-        <div class="text-center"><button type="submit">Notify me!</button></div>
+        <div class="text-center "><button type="submit" class="bg-success">Consultar por WhatsApp!</button></div>
       </form>
+      </div>
+
     </div>
   </section><!-- #hero -->
 
